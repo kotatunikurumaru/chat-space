@@ -5,13 +5,16 @@
         = current_user.name
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
-          = link_to do
+          = link_to new_group_path do
             = icon('fas', 'pen-square', class: 'icon')
         %li.side-header__box__menu__edit-user
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
   .groups
-    %a{:href => "/groups/28096/messages"}
+    - current_user.groups.each do |group|
       .group
-        %p.group__group-name hoga
-        %p.group__latest-message test
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
