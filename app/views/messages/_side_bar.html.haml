@@ -4,10 +4,10 @@
       %p.side-header__box__user-name hoga
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
-          %a{:href => "/groups/new"}
+          = link_to "root_path" do
             %i.fa.fa-edit
         %li.side-header__box__menu__edit-user
-          %a{:href => "/users/22155/edit"}
+          = link_to "root_path" do
             %i.fa.fa-cog
   .groups
     %a{:href => "/groups/28096/messages"}
