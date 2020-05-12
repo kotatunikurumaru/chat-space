@@ -33,13 +33,12 @@
     }
   }
 
-  .messages {
+  .message {
     background-color: #FAFAFA;
     box-sizing: border-box;
     padding: 46px 40px 0;
     height: calc(100vh - 100px - 90px);
     overflow: scroll;
-    .message {
       .upper-message {
         display: flex;
         &__user-name {
@@ -61,7 +60,6 @@
           margin-bottom: 40px;
         }
       }
-    }
   }
 
   .form {
